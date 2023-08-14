@@ -37,4 +37,6 @@ module "container" {
   name                 = each.value.name
   storage_account_name = local.storage_account_name
   access_type          = lookup(each.value, "access_type", "private")
+
+  depends_on = [ azurerm_storage_account.main ]
 }
