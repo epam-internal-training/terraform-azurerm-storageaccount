@@ -1,0 +1,209 @@
+I, [2023-09-03T20:10:18.758975 #9408]  INFO -- default-terraform: -----> Destroying <default-terraform>...
+W, [2023-09-03T20:10:18.760053 #9408]  WARN -- default-terraform: Reading the Terraform client version...
+I, [2023-09-03T20:10:19.603941 #9408]  INFO -- default-terraform: Terraform v1.1.6
+I, [2023-09-03T20:10:19.604125 #9408]  INFO -- default-terraform: on windows_amd64
+I, [2023-09-03T20:10:19.604234 #9408]  INFO -- default-terraform: + provider registry.terraform.io/hashicorp/azurerm v3.71.0
+I, [2023-09-03T20:10:19.604354 #9408]  INFO -- default-terraform: + provider registry.terraform.io/hashicorp/random v3.5.1
+I, [2023-09-03T20:10:19.604412 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:10:19.604467 #9408]  INFO -- default-terraform: Your version of Terraform is out of date! The latest version
+I, [2023-09-03T20:10:19.604529 #9408]  INFO -- default-terraform: is 1.5.6. You can update by downloading from https://www.terraform.io/downloads.html
+W, [2023-09-03T20:10:19.636123 #9408]  WARN -- default-terraform: Finished reading the Terraform client version.
+W, [2023-09-03T20:10:19.636941 #9408]  WARN -- default-terraform: Verifying the Terraform client version is in the supported interval of >= 0.11.4, < 2.0.0...
+W, [2023-09-03T20:10:19.638197 #9408]  WARN -- default-terraform: Finished verifying the Terraform client version.
+W, [2023-09-03T20:10:19.638511 #9408]  WARN -- default-terraform: Initializing the Terraform working directory...
+I, [2023-09-03T20:10:20.480516 #9408]  INFO -- default-terraform: [0m[1mInitializing modules...[0m
+I, [2023-09-03T20:10:20.497753 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:10:20.497924 #9408]  INFO -- default-terraform: [0m[1mInitializing the backend...[0m
+I, [2023-09-03T20:10:21.069232 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:10:21.069432 #9408]  INFO -- default-terraform: [0m[1mInitializing provider plugins...[0m
+I, [2023-09-03T20:10:21.069509 #9408]  INFO -- default-terraform: - Reusing previous version of hashicorp/random from the dependency lock file
+I, [2023-09-03T20:10:21.610549 #9408]  INFO -- default-terraform: - Reusing previous version of hashicorp/azurerm from the dependency lock file
+I, [2023-09-03T20:10:21.875128 #9408]  INFO -- default-terraform: - Using previously-installed hashicorp/random v3.5.1
+I, [2023-09-03T20:10:22.395512 #9408]  INFO -- default-terraform: - Using previously-installed hashicorp/azurerm v3.71.0
+I, [2023-09-03T20:10:22.395640 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:10:22.395701 #9408]  INFO -- default-terraform: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2023-09-03T20:10:22.430353 #9408]  WARN -- default-terraform: Finished initializing the Terraform working directory.
+W, [2023-09-03T20:10:22.430943 #9408]  WARN -- default-terraform: Selecting the kitchen-terraform-default-terraform Terraform workspace...
+W, [2023-09-03T20:10:23.904525 #9408]  WARN -- default-terraform: Finished selecting the kitchen-terraform-default-terraform Terraform workspace.
+W, [2023-09-03T20:10:23.905225 #9408]  WARN -- default-terraform: Destroying the Terraform-managed infrastructure...
+I, [2023-09-03T20:10:40.931207 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Refreshing state... [id=/subscriptions/0c829809-3ea0-423b-969d-23ff8c759098/resourceGroups/srini-epam-ctc-poc/providers/Microsoft.KeyVault/vaults/epmakvinttest20230901][0m
+I, [2023-09-03T20:10:47.600764 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].random_string.main: Refreshing state... [id=cd3][0m
+I, [2023-09-03T20:10:49.429255 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].azurerm_storage_account.main: Refreshing state... [id=/subscriptions/0c829809-3ea0-423b-969d-23ff8c759098/resourceGroups/srini-epam-ctc-poc/providers/Microsoft.Storage/storageAccounts/tfinttestepm20230901][0m
+I, [2023-09-03T20:11:09.737226 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.737417 #9408]  INFO -- default-terraform: Terraform used the selected providers to generate the following execution
+I, [2023-09-03T20:11:09.737610 #9408]  INFO -- default-terraform: plan. Resource actions are indicated with the following symbols:
+I, [2023-09-03T20:11:09.737775 #9408]  INFO -- default-terraform:   [31m-[0m destroy
+I, [2023-09-03T20:11:09.737921 #9408]  INFO -- default-terraform: [0m
+I, [2023-09-03T20:11:09.738065 #9408]  INFO -- default-terraform: Terraform will perform the following actions:
+I, [2023-09-03T20:11:09.738213 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.738371 #9408]  INFO -- default-terraform: [1m  # azurerm_key_vault.akv[0m will be [1m[31mdestroyed[0m[0m
+I, [2023-09-03T20:11:09.738516 #9408]  INFO -- default-terraform: [0m  [31m-[0m[0m resource "azurerm_key_vault" "akv" {
+I, [2023-09-03T20:11:09.738660 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0maccess_policy[0m[0m                   = [] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.738804 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0menable_rbac_authorization[0m[0m       = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.738956 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0menabled_for_deployment[0m[0m          = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739101 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0menabled_for_disk_encryption[0m[0m     = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739245 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0menabled_for_template_deployment[0m[0m = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739397 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mid[0m[0m                              = "/subscriptions/0c829809-3ea0-423b-969d-23ff8c759098/resourceGroups/srini-epam-ctc-poc/providers/Microsoft.KeyVault/vaults/epmakvinttest20230901" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739541 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mlocation[0m[0m                        = "eastus" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739684 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mname[0m[0m                            = "epmakvinttest20230901" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739830 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mpublic_network_access_enabled[0m[0m   = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.739894 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mpurge_protection_enabled[0m[0m        = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740047 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mresource_group_name[0m[0m             = "srini-epam-ctc-poc" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740200 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0msku_name[0m[0m                        = "standard" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740261 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0msoft_delete_retention_days[0m[0m      = 90 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740313 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mtags[0m[0m                            = {} [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740363 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mtenant_id[0m[0m                       = "b41b72d0-4e9f-4c26-8a69-f949f367c91d" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740414 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mvault_uri[0m[0m                       = "https://epmakvinttest20230901.vault.azure.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740462 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.740509 #9408]  INFO -- default-terraform:       [31m-[0m [0mnetwork_acls {
+I, [2023-09-03T20:11:09.740567 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mbypass[0m[0m                     = "AzureServices" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740624 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mdefault_action[0m[0m             = "Allow" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740679 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mip_rules[0m[0m                   = [] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740732 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mvirtual_network_subnet_ids[0m[0m = [] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.740783 #9408]  INFO -- default-terraform:  }
+I, [2023-09-03T20:11:09.740831 #9408]  INFO -- default-terraform:     }
+I, [2023-09-03T20:11:09.740881 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.740929 #9408]  INFO -- default-terraform: [1m  # module.storage_account["storage1"].azurerm_storage_account.main[0m will be [1m[31mdestroyed[0m[0m
+I, [2023-09-03T20:11:09.740977 #9408]  INFO -- default-terraform: [0m  [31m-[0m[0m resource "azurerm_storage_account" "main" {
+I, [2023-09-03T20:11:09.741026 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0maccess_tier[0m[0m                       = "Hot" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741075 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0maccount_kind[0m[0m                      = "StorageV2" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741123 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0maccount_replication_type[0m[0m          = "LRS" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741172 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0maccount_tier[0m[0m                      = "Standard" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741221 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mallow_nested_items_to_be_public[0m[0m   = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741269 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mcross_tenant_replication_enabled[0m[0m  = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741330 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mdefault_to_oauth_authentication[0m[0m   = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.741414 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0menable_https_traffic_only[0m[0m         = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750721 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mid[0m[0m                                = "/subscriptions/0c829809-3ea0-423b-969d-23ff8c759098/resourceGroups/srini-epam-ctc-poc/providers/Microsoft.Storage/storageAccounts/tfinttestepm20230901" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750799 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0minfrastructure_encryption_enabled[0m[0m = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750845 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mis_hns_enabled[0m[0m                    = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750882 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mlocation[0m[0m                          = "eastus" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750917 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mmin_tls_version[0m[0m                   = "TLS1_2" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750953 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mname[0m[0m                              = "tfinttestepm20230901" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.750987 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mnfsv3_enabled[0m[0m                     = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751022 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_access_key[0m[0m                = (sensitive value)
+I, [2023-09-03T20:11:09.751060 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_blob_connection_string[0m[0m    = (sensitive value)
+I, [2023-09-03T20:11:09.751097 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_blob_endpoint[0m[0m             = "https://tfinttestepm20230901.blob.core.windows.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751133 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_blob_host[0m[0m                 = "tfinttestepm20230901.blob.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751167 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_connection_string[0m[0m         = (sensitive value)
+I, [2023-09-03T20:11:09.751201 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_dfs_endpoint[0m[0m              = "https://tfinttestepm20230901.dfs.core.windows.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751237 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_dfs_host[0m[0m                  = "tfinttestepm20230901.dfs.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751272 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_file_endpoint[0m[0m             = "https://tfinttestepm20230901.file.core.windows.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751307 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_file_host[0m[0m                 = "tfinttestepm20230901.file.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751341 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_location[0m[0m                  = "eastus" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751384 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_queue_endpoint[0m[0m            = "https://tfinttestepm20230901.queue.core.windows.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751419 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_queue_host[0m[0m                = "tfinttestepm20230901.queue.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751453 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_table_endpoint[0m[0m            = "https://tfinttestepm20230901.table.core.windows.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751487 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_table_host[0m[0m                = "tfinttestepm20230901.table.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751521 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_web_endpoint[0m[0m              = "https://tfinttestepm20230901.z13.web.core.windows.net/" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751555 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mprimary_web_host[0m[0m                  = "tfinttestepm20230901.z13.web.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751589 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mpublic_network_access_enabled[0m[0m     = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751623 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mqueue_encryption_key_type[0m[0m         = "Service" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751657 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mresource_group_name[0m[0m               = "srini-epam-ctc-poc" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751691 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0msecondary_access_key[0m[0m              = (sensitive value)
+I, [2023-09-03T20:11:09.751725 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0msecondary_connection_string[0m[0m       = (sensitive value)
+I, [2023-09-03T20:11:09.751760 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0msftp_enabled[0m[0m                      = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751833 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mshared_access_key_enabled[0m[0m         = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751871 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mtable_encryption_key_type[0m[0m         = "Service" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.751906 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mtags[0m[0m                              = {
+I, [2023-09-03T20:11:09.759791 #9408]  INFO -- default-terraform:    [31m-[0m [0m"costcenter"  = "TF1001"
+I, [2023-09-03T20:11:09.759878 #9408]  INFO -- default-terraform:    [31m-[0m [0m"environment" = "dev"
+I, [2023-09-03T20:11:09.759927 #9408]  INFO -- default-terraform:    [31m-[0m [0m"project"     = "epmint"
+I, [2023-09-03T20:11:09.759965 #9408]  INFO -- default-terraform:  } [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760001 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.760036 #9408]  INFO -- default-terraform:       [31m-[0m [0mblob_properties {
+I, [2023-09-03T20:11:09.760075 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mchange_feed_enabled[0m[0m           = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760113 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mchange_feed_retention_in_days[0m[0m = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760151 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mlast_access_time_enabled[0m[0m      = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760188 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mversioning_enabled[0m[0m            = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760226 #9408]  INFO -- default-terraform:  }
+I, [2023-09-03T20:11:09.760260 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.760294 #9408]  INFO -- default-terraform:       [31m-[0m [0midentity {
+I, [2023-09-03T20:11:09.760333 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0midentity_ids[0m[0m = [] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760379 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mprincipal_id[0m[0m = "c876db70-6aaf-47aa-a87e-76805e3eba60" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760415 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mtenant_id[0m[0m    = "b41b72d0-4e9f-4c26-8a69-f949f367c91d" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760452 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mtype[0m[0m         = "SystemAssigned" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760489 #9408]  INFO -- default-terraform:  }
+I, [2023-09-03T20:11:09.760523 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.760557 #9408]  INFO -- default-terraform:       [31m-[0m [0mnetwork_rules {
+I, [2023-09-03T20:11:09.760593 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mbypass[0m[0m                     = [
+I, [2023-09-03T20:11:09.760629 #9408]  INFO -- default-terraform:        [31m-[0m [0m"None",
+I, [2023-09-03T20:11:09.760669 #9408]  INFO -- default-terraform:      ] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760708 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mdefault_action[0m[0m             = "Allow" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760745 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mip_rules[0m[0m                   = [] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760780 #9408]  INFO -- default-terraform:    [31m-[0m [0m[1m[0mvirtual_network_subnet_ids[0m[0m = [] [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.760816 #9408]  INFO -- default-terraform:  }
+I, [2023-09-03T20:11:09.760850 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.760883 #9408]  INFO -- default-terraform:       [31m-[0m [0mqueue_properties {
+I, [2023-09-03T20:11:09.760920 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.760958 #9408]  INFO -- default-terraform:    [31m-[0m [0mhour_metrics {
+I, [2023-09-03T20:11:09.760994 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0menabled[0m[0m               = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761031 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0minclude_apis[0m[0m          = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761068 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mretention_policy_days[0m[0m = 7 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761105 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mversion[0m[0m               = "1.0" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761141 #9408]  INFO -- default-terraform:      }
+I, [2023-09-03T20:11:09.761174 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.761210 #9408]  INFO -- default-terraform:    [31m-[0m [0mlogging {
+I, [2023-09-03T20:11:09.761247 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mdelete[0m[0m                = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761283 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mread[0m[0m                  = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761319 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mretention_policy_days[0m[0m = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761355 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mversion[0m[0m               = "1.0" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761393 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mwrite[0m[0m                 = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761428 #9408]  INFO -- default-terraform:      }
+I, [2023-09-03T20:11:09.761461 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.761497 #9408]  INFO -- default-terraform:    [31m-[0m [0mminute_metrics {
+I, [2023-09-03T20:11:09.761533 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0menabled[0m[0m               = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761570 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0minclude_apis[0m[0m          = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761605 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mretention_policy_days[0m[0m = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761642 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mversion[0m[0m               = "1.0" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761690 #9408]  INFO -- default-terraform:      }
+I, [2023-09-03T20:11:09.761727 #9408]  INFO -- default-terraform:  }
+I, [2023-09-03T20:11:09.761761 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.761794 #9408]  INFO -- default-terraform:       [31m-[0m [0mshare_properties {
+I, [2023-09-03T20:11:09.761827 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.761863 #9408]  INFO -- default-terraform:    [31m-[0m [0mretention_policy {
+I, [2023-09-03T20:11:09.761900 #9408]  INFO -- default-terraform:        [31m-[0m [0m[1m[0mdays[0m[0m = 7 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.761937 #9408]  INFO -- default-terraform:      }
+I, [2023-09-03T20:11:09.761972 #9408]  INFO -- default-terraform:  }
+I, [2023-09-03T20:11:09.762006 #9408]  INFO -- default-terraform:     }
+I, [2023-09-03T20:11:09.762039 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.762072 #9408]  INFO -- default-terraform: [1m  # module.storage_account["storage1"].random_string.main[0m will be [1m[31mdestroyed[0m[0m
+I, [2023-09-03T20:11:09.762107 #9408]  INFO -- default-terraform: [0m  [31m-[0m[0m resource "random_string" "main" {
+I, [2023-09-03T20:11:09.762142 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mid[0m[0m          = "cd3" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.762177 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mlength[0m[0m      = 3 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.762212 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mlower[0m[0m       = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.762247 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mmin_lower[0m[0m   = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.762281 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mmin_numeric[0m[0m = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777061 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mmin_special[0m[0m = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777147 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mmin_upper[0m[0m   = 0 [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777187 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mnumber[0m[0m      = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777223 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mnumeric[0m[0m     = true [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777257 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mresult[0m[0m      = "cd3" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777294 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mspecial[0m[0m     = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777360 #9408]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mupper[0m[0m       = false [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:09.777403 #9408]  INFO -- default-terraform:     }
+I, [2023-09-03T20:11:09.777439 #9408]  INFO -- default-terraform: 
+I, [2023-09-03T20:11:09.777474 #9408]  INFO -- default-terraform: [0m[1mPlan:[0m 0 to add, 0 to change, 3 to destroy.
+I, [2023-09-03T20:11:09.777508 #9408]  INFO -- default-terraform: [0m[0m
+I, [2023-09-03T20:11:09.777542 #9408]  INFO -- default-terraform: [1mChanges to Outputs:[0m[0m
+I, [2023-09-03T20:11:09.777576 #9408]  INFO -- default-terraform:   [31m-[0m [0m[1m[0mstorage_account_name[0m[0m = "tfinttestepm20230901" [90m->[0m [0m[90mnull[0m[0m
+I, [2023-09-03T20:11:21.120741 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].azurerm_storage_account.main: Destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-23ff8c759098/resourceGroups/srini-epam-ctc-poc/providers/Microsoft.Storage/storageAccounts/tfinttestepm20230901][0m[0m
+I, [2023-09-03T20:11:31.127991 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].azurerm_storage_account.main: Still destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-...e/storageAccounts/tfinttestepm20230901, 10s elapsed][0m[0m
+I, [2023-09-03T20:11:35.903370 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].azurerm_storage_account.main: Destruction complete after 15s[0m
+I, [2023-09-03T20:11:35.903488 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].random_string.main: Destroying... [id=cd3][0m[0m
+I, [2023-09-03T20:11:35.904259 #9408]  INFO -- default-terraform: [0m[1mmodule.storage_account["storage1"].random_string.main: Destruction complete after 0s[0m
+I, [2023-09-03T20:11:35.934478 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-23ff8c759098/resourceGroups/srini-epam-ctc-poc/providers/Microsoft.KeyVault/vaults/epmakvinttest20230901][0m[0m
+I, [2023-09-03T20:11:45.948544 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Still destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-....KeyVault/vaults/epmakvinttest20230901, 10s elapsed][0m[0m
+I, [2023-09-03T20:11:55.950013 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Still destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-....KeyVault/vaults/epmakvinttest20230901, 20s elapsed][0m[0m
+I, [2023-09-03T20:12:05.964176 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Still destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-....KeyVault/vaults/epmakvinttest20230901, 30s elapsed][0m[0m
+I, [2023-09-03T20:12:15.963382 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Still destroying... [id=/subscriptions/0c829809-3ea0-423b-969d-....KeyVault/vaults/epmakvinttest20230901, 40s elapsed][0m[0m
+I, [2023-09-03T20:12:16.867439 #9408]  INFO -- default-terraform: [0m[1mazurerm_key_vault.akv: Destruction complete after 41s[0m
+I, [2023-09-03T20:12:16.898893 #9408]  INFO -- default-terraform: [0m[1m[32m
+I, [2023-09-03T20:12:16.899050 #9408]  INFO -- default-terraform: Destroy complete! Resources: 3 destroyed.
+W, [2023-09-03T20:12:16.930128 #9408]  WARN -- default-terraform: Finished destroying the Terraform-managed infrastructure.
+W, [2023-09-03T20:12:16.930794 #9408]  WARN -- default-terraform: Selecting the default Terraform workspace...
+I, [2023-09-03T20:12:18.349281 #9408]  INFO -- default-terraform: [0m[0m[32mSwitched to workspace "default".[0m
+W, [2023-09-03T20:12:18.381794 #9408]  WARN -- default-terraform: Finished selecting the default Terraform workspace.
+W, [2023-09-03T20:12:18.382334 #9408]  WARN -- default-terraform: Deleting the kitchen-terraform-default-terraform Terraform workspace...
+I, [2023-09-03T20:12:22.542724 #9408]  INFO -- default-terraform: [0m[32mDeleted workspace "kitchen-terraform-default-terraform"![0m
+W, [2023-09-03T20:12:22.574069 #9408]  WARN -- default-terraform: Finished deleting the kitchen-terraform-default-terraform Terraform workspace.
+I, [2023-09-03T20:12:22.575957 #9408]  INFO -- default-terraform: Finished destroying <default-terraform> (2m3.81s).

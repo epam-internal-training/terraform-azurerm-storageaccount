@@ -7,5 +7,14 @@ locals {
     costcenter  = var.costcenter
   }
 
+  secrets = [
+    "primary_access_key",
+    "secondary_access_key",
+    "primary_connection_string",
+    "secondary_connection_string",
+    "primary_blob_connection_string",
+    "secondary_blob_connection_string"
+  ]
+
   tags = merge(local.defatlt_tags, var.tags)
 }
